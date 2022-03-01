@@ -1,0 +1,28 @@
+@import "../styles/mixins";
+@import "../styles/variables";
+
+.chessboardContainer{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .chessboard{
+            width:800px;
+            height:800px;
+            // background-color: $black_box;
+            display: flex;
+            flex-wrap: wrap;
+
+            span{
+                width:100px;
+                height:100px;
+                background-color:$white_box;
+                display: block;
+            }
+
+            .whiteBox{
+                background-color:$black_box;
+            }
+        }
+}
